@@ -64,10 +64,12 @@ h3{
 }
 
 .reflection{
+    font-size: 25px;
     padding-left: 10px;
     padding-top: 0px;
     padding-right: 10px;
     margin-right: 10px;
+    line-height: 175%;
     font-family: 'Panama', serif;
 }
 
@@ -210,6 +212,28 @@ a:hover{
 
     #content{
         margin-top: 2rem;
+    }
+
+    #disclaimer{
+        margin-top: 15px;
+    }
+
+    textArea, #submitReflection, button{
+        font-size: 2rem;
+    }
+
+    ::placeholder{
+        font-size: 2rem;
+    }
+
+    #aboutPopUp{
+        width: calc(90vw - 10px - 50px - 10px);
+        font-size: 2rem;
+    }
+
+  .reflection{
+        font-size: 30px;
+        line-height: 180%;
     }
 
 }
