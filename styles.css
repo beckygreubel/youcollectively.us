@@ -200,7 +200,7 @@ a:hover{
     margin-top: 5px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     #questionsubmit, #content{
         width: calc(90vw - 2rem);
         overflow-x: none;
