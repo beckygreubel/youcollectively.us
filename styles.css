@@ -1,0 +1,201 @@
+/* this is the span one - multicolor, etc. */
+
+@font-face{
+    font-family: Steinbeck;
+    src: url(media/Steinbeck\ Regular.woff);
+}
+
+@font-face{
+    font-family: Panama;
+    src: url(media/PanamaRegular.woff);
+}
+
+:root{
+    --bgColor: #b0a595;
+    --fontColor: black;
+    --accentColor: #F22E2E;
+    --mainFont: 'Steinbeck', sans-serif;
+    --fontSize: 20px;
+}
+
+body{
+    background-color: var(--bgColor);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--mainFont);
+    width: 100vw;
+}
+
+#container{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#questionsubmit, #content{
+    width: calc(50vw - 2rem);
+    overflow-x: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+h1, h3{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 150%;
+}
+
+h1{
+    font-family: var(--mainFont);
+}
+
+h3{
+    margin-bottom: 2rem;
+}
+
+#question{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.reflection{
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-right: 10px;
+    margin-right: 10px;
+    font-family: 'Panama', serif;
+}
+
+button{
+    border: none;
+    font-size: 20px;
+    transition: color 1s;
+    transition: background-color 1s;
+    font-family: var(--mainFont);
+    padding: 10px;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    color: white;
+}
+
+#addReflection{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#form{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#about, #archive{
+    display: inline-block;
+}
+
+#archive{
+    margin-left: 5px;
+}
+
+textarea, #submit{
+    display: inline-block;
+}
+
+textarea{
+    width: 60vw;
+    border: none;
+    border-bottom: 2px black solid;
+    resize: none;
+    outline: none;
+    background-color: var(--bgColor);
+    color: white;
+    font-family: var(--mainFont);
+    font-size: var(--fontSize);
+    line-height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+::placeholder{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+#submitReflection{
+    border: none;
+    font-size: 1rem;
+    height: 100%;
+    font-family: var(--mainFont);
+}
+
+#submitReflection h3{
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+}
+
+#aboutPopUp{
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    margin-right: 10px;
+    background-color: var(--bgColor);
+    border: 3px black solid;
+    padding: 10px;
+    width: 50vw;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a:hover{
+    color: white;
+}
+
+#aboutClose{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#name{
+    background-color: var(--accentColor);
+    padding: 5px;
+}
+
+#toAdd{
+    display: none;
+}
+
+#disclaimer{
+    width: 100%;
+    background-color: #F2B705;
+    padding: 5px;
+    line-height: 1.5rem;
+    margin: 0;
+    margin-top: 5px;
+}

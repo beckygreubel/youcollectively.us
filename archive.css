@@ -1,0 +1,88 @@
+@font-face{
+    font-family: Steinbeck;
+    src: url(media/Steinbeck\ Regular.woff);
+}
+
+@font-face{
+    font-family: PanamaRegular;
+    src: url(media/PanamaRegular.woff);
+}
+
+:root{
+    --bgColor: #b0a595;
+    --fontColor: black;
+    --accentColor: #F22E2E;
+    --mainFont: 'Steinbeck', sans-serif;
+    --fontSize: 30px;
+}
+
+body{
+    background-color: var(--bgColor);
+    font-family: var(--mainFont);
+}
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fontSize);
+    padding-bottom: 5px;
+}
+
+.panel{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+.accordion{
+    background-color: var(--bgColor);
+    width:100%;
+    text-align: left;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:none;
+    font-size: var(--fontSize);
+    border-color: black;
+    border-width:0.5vh;
+    padding:0.2em;
+    transition: 0.5s;
+    transition-timing-function: ease;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordion:hover{
+      background-color: var(--accentColor);
+  }
+
+  .question, .numEntries{
+    margin-left:1vh;
+    margin-right:1vh;
+    font-family: var(--mainFont);
+  }
+
+  a{
+    color: black;
+    text-decoration: none;
+    transition: color 1s;
+}
+
+a:hover{
+    color: white;
+}
+
+.reflection{
+    display: inline;
+    font-size: var(--fontSize);
+    font-family: 'PanamaRegular', serif; 
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 10px;
+    line-height: 150%;
+}
+
+#name{
+    background-color: #03A696;
+    line-height: 150%;
+    padding: 5px;
+}

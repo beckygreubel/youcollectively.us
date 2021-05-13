@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>You (collectively)</title>
+  <meta name="description" content="Me (on Saturday, March 20, 2021)">
+  <meta name="author" content="BeckyGreubel">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+   <div id="container">
+      <div id="questionsubmit">
+         <h1 id="questionContainer"><span id="question"></span></h1>
+         <div id="addReflection">
+            <h3 class="toClose">+</h3>
+            <textarea class="toClose" id="userReflection" placeholder="Be vulnerable" autofocus></textarea>
+            <button class="toClose" class="submit" id="submitReflection" type="button" onclick="submitted()"><h3>Add Entry</h3></button>
+            <h3 id="toAdd">Thank you for sharing a bit of you</h3>
+          </div>
+          <p id="disclaimer">All entries are anonymous, with no information about you or your machined saved. Be free and express yourself. Any entries that
+             threaten the ability for others to feel safe and free to share will be removed.
+          </p>
+      </div>
+      <div id="content">
+          <h3 id="reflectionContainer"></h3>
+      </div> 
+   </div>
+ 
+
+<footer>
+   
+    <button id="about">?</div>
+    <button id="archive"><a href="archive.html">Past Entries</a></div>
+</footer>
+<div id="aboutPopUp">
+   <h3><span id="name">You (collectively)</span> allows visitors to reflect on how they define themselves, as a group. Each day, the question changes to another meant to 
+       inspire thought and critical thinking about who and what you are. The site allows you to learn, empathize and connect with others also on 
+       a self-discovery journey.
+   </h3> 
+   <button id="aboutClose">-</button>
+</div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+<script src="script.js" defer></script>
+
+</script>
+</body>
+</html>
